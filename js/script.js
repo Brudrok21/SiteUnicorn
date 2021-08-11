@@ -1,3 +1,4 @@
+
 function testWebP(callback) {
 
     var webP = new Image();
@@ -15,6 +16,10 @@ function testWebP(callback) {
     document.querySelector('body').classList.add('no-webp');
     }
 });
+window.addEventListener(`resize`, event => {
+    window.location.reload();
+    window.location.hash = "";
+}, false);
 let svgPC = `
 <div class="textcenter"><h3>HOW IT WORKS:</h3></div>
 
@@ -762,4 +767,5 @@ function svgRun(){
     btndown.style.color = "";
     idWorks.classList.remove("activeLi");
  }
+ 
  
